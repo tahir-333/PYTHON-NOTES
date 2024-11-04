@@ -49,15 +49,81 @@
 # print(name[0:3])
 # name["0"]= Amir
 
-responses = {}
-polling_active = True
-while polling_active:
-    name  = input("\nWhat is your name? ")
-    response = input("Which mountain would you like to climb one day? ")
-    responses[name] = response
-    repeat = input("Would you like to let another person respond? (yes/ no)")
-    if repeat == "no":
-        polling_active = False
-print("\n----Poll Result---")
-for name, response in responses.items():
-    print(f"{name} would like to climb {response}.")
+# responses = {}
+# polling_active = True
+# while polling_active:
+#     name  = input("\nWhat is your name? ")
+#     response = input("Which mountain would you like to climb one day? ")
+#     responses[name] = response
+#     repeat = input("Would you like to let another person respond? (yes/ no)")
+#     if repeat == "no":
+#         polling_active = False
+# print("\n----Poll Result---")
+# for name, response in responses.items():
+#     print(f"{name} would like to climb {response}.")
+
+
+# from typing import Callable
+
+# def my_decorator(func: Callable[[], None])-> Callable[[], None]:
+#     def wrapper():
+#         print("Something is happening before the function is called")
+#         func()
+#         print("Something is happening after the function is called")
+#         return wrapper
+    
+#     @my_decorator
+#     def say_hello():
+#         print("Hello")
+        
+#     say_hello(hello)
+    
+    
+    
+# from typing import Callable
+
+# def my_decorator(func: Callable[[int], None])-> Callable[[int], None]:
+#     def wrapper(num1: int)->None:
+#         print("Something before the function is called.")
+#         func(num1)
+# #         print("Something is happening after the function is called.")
+# #         return wrapper
+# # @my_decorator
+# # def say_hello(num1: int)-> None:
+# #     print(num1)
+    
+# # say_hello(100)
+
+
+# class ToyCar:
+#     def __init__(self):
+#         self.speed = 10
+#         self.fuel = 100
+        
+#     def move(self):
+#         if self.fuel > 0:
+#             self.speed +=10
+#             self.fuel -=10
+#             print("The Car is Moving")
+#         else:
+#             print("Out Of Fuel")
+            
+#         def stop(self):
+            
+#             self.speed = 0
+#             print("The Car has Stopped")
+            
+            
+
+
+class Account:
+    def __init__(self, acc_no, acc_pass):
+        self.acc_no = acc_no
+        self.acc_pass = acc_pass
+        
+    def reset_pass(self):
+        print(self.__reset_pass)
+        
+acc1 = Account("12345", "abcd")
+print(acc1.acc_no)
+print(acc1.__reset_pass())
