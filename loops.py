@@ -116,14 +116,43 @@
             
 
 
-class Account:
-    def __init__(self, acc_no, acc_pass):
-        self.acc_no = acc_no
-        self.acc_pass = acc_pass
+# class Account:
+#     def __init__(self, acc_no, acc_pass):
+#         self.acc_no = acc_no
+#         self.acc_pass = acc_pass
         
-    def reset_pass(self):
-        print(self.__reset_pass)
+#     def reset_pass(self):
+#         print(self.__reset_pass)
         
-acc1 = Account("12345", "abcd")
-print(acc1.acc_no)
-print(acc1.__reset_pass())
+# acc1 = Account("12345", "abcd")
+# print(acc1.acc_no)
+# print(acc1.__reset_pass())
+
+
+# with open("abc1.txt", "w")as f:
+#     data = f.write("We love Programming")
+#     print(data)
+# class Car:
+
+#     def __init__(self, type):
+#         self.type = type
+        
+# @staticmethod
+# def start():
+#     print("Car Started.")
+    
+# @staticmethod
+# def end():
+#     print("Car Stopped.")
+    
+    
+# class ToyotaCar(Car):
+#     def __init__(self, name):
+#         super().__init__(type)
+#         self.name = name
+#         super().start()
+        
+# car1 = ToyotaCar("Prius", "Electric")
+# print(car1.type)
+    
+
