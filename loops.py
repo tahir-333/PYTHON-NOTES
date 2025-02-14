@@ -156,3 +156,18 @@
 # print(car1.type)
     
 
+# print(5/2)
+
+# x = 5
+# y = 2
+# print(x // y)
+
+# fruits = ["Apple", "Banana", "Cherry"]
+# for index, fruit in enumerate(fruits):
+#     print(index, fruit)
+
+
+# my_list = [1, 2, 3, 4, 5]
+# print(7 in my_list)
+    
+print(type([]) == list)
